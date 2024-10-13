@@ -1,0 +1,89 @@
+/* Admin Dashboard Page Styles */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.admin-dashboard {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.admin-dashboard h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #4CAF50; /* Green color for title */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.NouserS {
+  text-align: center;
+  font-size: 18px;
+  color: #666; /* Grey color for "No users" message */
+}
+
+.user-card {
+  border: 1px solid #ccc; /* Light border for user cards */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px;
+  margin: 15px 0; /* Spacing between user cards */
+  background-color: #fff; /* White background for user cards */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.user-card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.user-card h3 {
+  margin: 0 0 10px; /* Space below user name */
+  font-size: 24px;
+  color: #333;
+}
+
+.user-card p {
+  margin: 0 0 15px; /* Space below social handle */
+  font-size: 16px;
+  color: #555;
+}
+
+.user-card img {
+  width: 100%; /* Full width of the card */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 300px; /* Limit max width to 300px */
+  border-radius: 4px; /* Slightly rounded corners for images */
+  margin: 5px; /* Space around each image */
+  display: inline-block; /* Allow images to sit side by side */
+  transition: transform 0.2s ease-in-out; /* Smooth scale effect */
+}
+
+.user-card img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard {
+    padding: 10px;
+  }
+
+  .user-card {
+    padding: 15px; /* Slightly reduce padding for smaller screens */
+  }
+
+  .user-card h3 {
+    font-size: 20px; /* Reduce font size for smaller screens */
+  }
+
+  .user-card p {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+
+  .NouserS {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
